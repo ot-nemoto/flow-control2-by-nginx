@@ -1,5 +1,17 @@
 # flow-control2-by-nginx
 
+## 概要
+
+- nginxに流量制限を設定し検証
+
+|Path|流量制限|HTTPステータス|
+|--|--|--|
+|/|-|-|
+|/1.html|10req/s|429|
+|/2.html|30req/s|503|
+
+- appはGradleのデモアプリ
+
 ## 環境構築
 
 ```sh
