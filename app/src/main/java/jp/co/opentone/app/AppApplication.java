@@ -14,6 +14,16 @@ public class AppApplication {
 		return "demo-app";
 	}
 
+	@RequestMapping("/1.html")
+	public String home1() {
+		return "1";
+	}
+
+	@RequestMapping("/2.html")
+	public String home2() {
+		return "2";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(AppApplication.class, args);
 	}

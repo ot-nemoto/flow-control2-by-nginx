@@ -13,12 +13,14 @@ java -version
 
 ```sh
 ./app/gradlew -b app/build.gradle build
+#java -jar app/build/libs/app-0.0.1-SNAPSHOT.jar
+docker-compose build
 ```
 
 *deploy*
 
 ```sh
-java -jar app/build/libs/app-0.0.1-SNAPSHOT.jar
+docker-compose up -d
 ```
 
 ## 参考
