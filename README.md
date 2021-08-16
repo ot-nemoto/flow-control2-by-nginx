@@ -15,6 +15,8 @@
 |/6.html|POST|30req/s($uri)|429|
 
 - appはGradleのデモアプリ
+- appは8081で起動
+- nginxは8080で起動
 
 ## 環境構築
 
