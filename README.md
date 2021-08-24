@@ -4,15 +4,17 @@
 
 - nginxに流量制限を設定し検証
 
-|Path|Method|流量制限|HTTPステータス|
-|--|--|--|--|
-|/|GET-|-|
-|/1.html|GET|10req/s(all)|429|
-|/2.html|GET|30req/s(all)|503|
-|/3.html|POST|-|-|
-|/4.html|POST|10req/s(all)|429|
-|/5.html|POST|10req/s($uri)|429|
-|/6.html|POST|30req/s($uri)|429|
+|Path|Method|流量制限|HTTPステータス|備考|
+|--|--|--|--|--|
+|/|GET-|-||
+|/1.html|GET|10req/s(all)|429||
+|/2.html|GET|30req/s(all)|503||
+|/3.html|POST|-|-||
+|/4.html|POST|10req/s(all)|429||
+|/5.html|POST|10req/s($uri)|429||
+|/6.html|POST|30req/s($uri)|429||
+|/11.html|GET|10req/s(all)|429|Access-Control-Allow-Originヘッダーを追加|
+|/12.html|POST|10req/s(all)|429|Access-Control-Allow-Originヘッダーを追加|
 
 - appはGradleのデモアプリ
 
